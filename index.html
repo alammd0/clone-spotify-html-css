@@ -1,0 +1,751 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" href="./asset/logo.png" />
+		<title>Spotify - Web Player: Music for everyone</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Anuphan:wght@300&family=Baloo+Bhaina+2&family=Bree+Serif&family=Montserrat:wght@300;400;500;600;700&family=Poppins:ital@0;1&display=swap"
+			rel="stylesheet" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+			integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer" />
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<div class="main">
+			<!-- side Bar Start -->
+			<div class="sidebar">
+				<div class="side-home">
+					<div class="home-search" style="opacity: 1">
+						<i class="fa-sharp fa-solid fa-house"></i>
+						<a href="#">Home</a>
+					</div>
+					<div class="home-search">
+						<i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+						<a href="#">Search</a>
+					</div>
+				</div>
+
+				<div class="side-lib">
+					<div class="you-lib">
+						<div>
+							<img src="./asset/library_icon.png" alt="" height="24rem" />
+							<a href="#">Your Library</a>
+						</div>
+
+						<div class="icon">
+							<i class="fa-regular fa-plus"></i>
+							<i class="fa-solid fa-arrow-right"></i>
+						</div>
+					</div>
+
+					<div class="first-playlist side-home">
+						<h2 style="opacity: 1">Create your first playlist</h2>
+						<p>It's easy, we'll help you</p>
+						<button class="btn" id="button">Create Playlist</button>
+					</div>
+
+					<div class="first-playlist side-home">
+						<h2 style="opacity: 1">Let's find some podcasts to follow</h2>
+						<p>We'll keep you updated on new episodes</p>
+						<button class="btn" id="button">Browse podcasts</button>
+					</div>
+				</div>
+			</div>
+			<!-- Side Bar end -->
+
+			<!-- Main Content Start -->
+			<div class="main-content">
+				<div class="sticky-nav">
+					<div class="nav-btns">
+						<div class="nav-btn">
+							<img src="./asset/backward_icon.png" class="img" alt="" />
+						</div>
+
+						<div class="nav-btn">
+							<img
+								src="./asset/forward_icon.png"
+								class="img"
+								alt=""
+								style="padding-left: 0.35rem" />
+						</div>
+					</div>
+
+					<div class="nav-icon">
+						<button class="btn-nav">Explore Premium</button>
+						<button class="btn-nav" id="install">
+							<i class="fa-solid fa-circle-down"></i> Install App
+						</button>
+
+						<i class="fa-solid fa-user" id="user"></i>
+					</div>
+				</div>
+
+				<div class="card-wrapper">
+					<h3>Recently Played</h3>
+					<div class="card-container">
+						<div class="card">
+							<div class="card-content">
+								<div class="card-img">
+									<img src="./asset/card1img.jpeg" class="card-imge" alt="" />
+								</div>
+
+								<div class="card-title">
+									<h4>Top 50-Global</h4>
+									<p>Lorem ipsum dolor...</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="card-tren-wrapper">
+					<div class="tren-heading">
+						<div class="left-heading">
+							<a href="#">Spotify original & exclusive shows</a>
+						</div>
+
+						<div class="right-heading" id="show">
+							<a href="#">Show All</a>
+						</div>
+					</div>
+
+					<div class="tren-card-cont">
+						<div class="tren-card">
+							<img
+								src="./Card/First_card/card1.jpeg"
+								alt=""
+								height="165px"
+								width="165px" />
+							<h3>True Story Bro! wit...</h3>
+							<a href="#"> Spotify</a>
+						</div>
+
+						<div class="tren-card">
+							<img
+								src="./Card/First_card/card2.jpeg"
+								height="165px"
+								width="165px"
+								alt="" />
+							<h3>The Horror Show b...</h3>
+							<a href="#">TMV Studios</a>
+						</div>
+
+						<div class="tren-card">
+							<img
+								src="./Card/First_card/card3.jpeg"
+								alt=""
+								height="165px"
+								width="165px" />
+							<h3>Chanakya Niti</h3>
+							<a href="#"> Kiran Chavda</a>
+						</div>
+
+						<div class="tren-card">
+							<img
+								src="./Card/First_card/card4.jpeg"
+								alt=""
+								height="165px"
+								width="165px" />
+							<h3>Horror Time - Scar...</h3>
+							<a href="#"> Horror Time </a>
+						</div>
+
+						<div class="tren-card">
+							<img
+								src="./Card/First_card/card5.jpeg"
+								alt=""
+								height="165px"
+								width="165px" />
+							<h3>Decode Dil with Ekta</h3>
+							<a href="#"> Spotify Studios</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="card-tren-wrapper">
+					<div class="tren-heading">
+						<div class="left-heading">
+							<a href="#">Trending Now</a>
+						</div>
+
+						<div class="right-heading" id="show">
+							<a href="#">Show All</a>
+						</div>
+					</div>
+
+					<div class="tren-card-cont">
+						<div class="tren-card">
+							<img
+								src="./Card/Second_card/card1.jpeg"
+								alt=""
+								height="165px"
+								width="165px" />
+							<div class="play-music">
+								<img
+									src="./asset/play_musicbar.png"
+									alt=""
+									height="60px"
+									width="60px" />
+							</div>
+							<h3>Tum kya mile (from...)</h3>
+							<a href="#"
+								>Pritam, Arijit Singh, <br />
+								Shreya Ghoshal</a
+							>
+						</div>
+						<div class="tren-card">
+							<img
+								src="./Card/Second_card/card2.jpeg"
+								height="165px"
+								width="165px"
+								alt="" />
+							<div class="play-music">
+								<img
+									src="./asset/play_musicbar.png"
+									alt=""
+									height="60px"
+									width="60px" />
+							</div>
+							<h3>Tum kya mile (from...)</h3>
+							<a href="#"
+								>Pritam, Arijit Singh, <br />
+								Shreya Ghoshal</a
+							>
+						</div>
+						<div class="tren-card">
+							<img
+								src="./Card/Second_card/card3.jpeg"
+								alt=""
+								height="165px"
+								width="165px" />
+							<div class="play-music">
+								<img
+									src="./asset/play_musicbar.png"
+									alt=""
+									height="60px"
+									width="60px" />
+							</div>
+							<h3>Tum kya mile (from...)</h3>
+							<a href="#"
+								>Pritam, Arijit Singh, <br />
+								Shreya Ghoshal</a
+							>
+						</div>
+						<div class="tren-card">
+							<img
+								src="./Card/Second_card/card4.jpeg"
+								alt=""
+								height="165px"
+								width="165px" />
+							<div class="play-music">
+								<img
+									src="./asset/play_musicbar.png"
+									alt=""
+									height="60px"
+									width="60px" />
+							</div>
+							<h3>Tum kya mile (from...)</h3>
+							<a href="#"
+								>Pritam, Arijit Singh, <br />
+								Shreya Ghoshal</a
+							>
+						</div>
+						<div class="tren-card">
+							<img
+								src="./Card/Second_card/card5.jpeg"
+								alt=""
+								height="165px"
+								width="165px" />
+							<div class="play-music">
+								<img
+									src="./asset/play_musicbar.png"
+									alt=""
+									height="60px"
+									width="60px" />
+							</div>
+							<h3>Tum kya mile (from...)</h3>
+							<a href="#"
+								>Pritam, Arijit Singh, <br />
+								Shreya Ghoshal</a
+							>
+						</div>
+					</div>
+				</div>
+
+				<div class="card-tren-wrapper">
+					<div class="tren-heading">
+						<div class="left-heading">
+							<a href="#">Try Something else</a>
+						</div>
+
+						<div class="right-heading" id="show">
+							<a href="#">Show All</a>
+						</div>
+					</div>
+
+					<div class="tren-card-cont">
+						<div class="tren-card">
+							<img
+								src="./Card/Third_card/card1.jpeg"
+								alt=""
+								height="165px"
+								width="165px" />
+							<div class="play-music">
+								<img
+									src="./asset/play_musicbar.png"
+									alt=""
+									height="60px"
+									width="60px" />
+							</div>
+							<h3>Hot hits Hindi</h3>
+							<a href="#"
+								>Pritam, Arijit Singh, <br />
+								Shreya Ghoshal</a
+							>
+						</div>
+						<div class="tren-card">
+							<img
+								src="./Card/Third_card/card2.jpeg"
+								height="165px"
+								width="165px"
+								alt="" />
+							<div class="play-music">
+								<img
+									src="./asset/play_musicbar.png"
+									alt=""
+									height="60px"
+									width="60px" />
+							</div>
+							<h3>All out OO's Hindi</h3>
+							<a href="#"
+								>Pritam, Arijit Singh, <br />
+								Shreya Ghoshal</a
+							>
+						</div>
+						<div class="tren-card">
+							<img
+								src="./Card/Third_card/card3.jpg"
+								alt=""
+								height="165px"
+								width="165px" />
+							<div class="play-music">
+								<img
+									src="./asset/play_musicbar.png"
+									alt=""
+									height="60px"
+									width="60px" />
+							</div>
+							<h3>Top 50-Global</h3>
+							<a href="#"
+								>Pritam, Arijit Singh, <br />
+								Shreya Ghoshal</a
+							>
+						</div>
+						<div class="tren-card">
+							<img
+								src="./Card/Third_card/card4.jpeg"
+								alt=""
+								height="165px"
+								width="165px" />
+							<div class="play-music">
+								<img
+									src="./asset/play_musicbar.png"
+									alt=""
+									height="60px"
+									width="60px" />
+							</div>
+							<h3>Hot Hits Punjabi</h3>
+							<a href="#"
+								>Pritam, Arijit Singh, <br />
+								Shreya Ghoshal</a
+							>
+						</div>
+						<div class="tren-card">
+							<img
+								src="./Card/Third_card/card5.jpeg"
+								alt=""
+								height="165px"
+								width="165px" />
+							<div class="play-music">
+								<img
+									src="./asset/play_musicbar.png"
+									alt=""
+									height="60px"
+									width="60px" />
+							</div>
+							<h3>OO's Love Hits</h3>
+							<a href="#"
+								>Pritam, Arijit Singh, <br />
+								Shreya Ghoshal</a
+							>
+						</div>
+					</div>
+				</div>
+
+				<div class="card-tren-wrapper">
+					<div class="tren-heading">
+						<div class="left-heading">
+							<a href="#">Featured Charts</a>
+						</div>
+
+						<div class="right-heading" id="show">
+							<a href="#">Show All</a>
+						</div>
+					</div>
+
+					<div class="tren-card-cont">
+						<div class="tren-card">
+							<img
+								src="./Card/Fourth_card/card1.jpg"
+								alt=""
+								height="165px"
+								width="165px" />
+							<div class="play-music">
+								<img
+									src="./asset/play_musicbar.png"
+									alt=""
+									height="60px"
+									width="60px" />
+							</div>
+							<h3>Hot hits Hindi</h3>
+							<a href="#"
+								>Pritam, Arijit Singh, <br />
+								Shreya Ghoshal</a
+							>
+						</div>
+						<div class="tren-card">
+							<img
+								src="./Card/Fourth_card/card2.jpg"
+								height="165px"
+								width="165px"
+								alt="" />
+							<div class="play-music">
+								<img
+									src="./asset/play_musicbar.png"
+									alt=""
+									height="60px"
+									width="60px" />
+							</div>
+							<h3>All out OO's Hindi</h3>
+							<a href="#"
+								>Pritam, Arijit Singh, <br />
+								Shreya Ghoshal</a
+							>
+						</div>
+						<div class="tren-card">
+							<img
+								src="./Card/Fourth_card/card3.jpg"
+								alt=""
+								height="165px"
+								width="165px" />
+							<div class="play-music">
+								<img
+									src="./asset/play_musicbar.png"
+									alt=""
+									height="60px"
+									width="60px" />
+							</div>
+							<h3>Top 50-Global</h3>
+							<a href="#"
+								>Pritam, Arijit Singh, <br />
+								Shreya Ghoshal</a
+							>
+						</div>
+						<div class="tren-card">
+							<img
+								src="./Card/Fourth_card/card4.jpg"
+								alt=""
+								height="165px"
+								width="165px" />
+							<div class="play-music">
+								<img
+									src="./asset/play_musicbar.png"
+									alt=""
+									height="60px"
+									width="60px" />
+							</div>
+							<h3>Hot Hits Punjabi</h3>
+							<a href="#"
+								>Pritam, Arijit Singh, <br />
+								Shreya Ghoshal</a
+							>
+						</div>
+						<div class="tren-card">
+							<img
+								src="./Card/Fourth_card/card5.jpg"
+								alt=""
+								height="165px"
+								width="165px" />
+							<div class="play-music">
+								<img
+									src="./asset/play_musicbar.png"
+									alt=""
+									height="60px"
+									width="60px" />
+							</div>
+							<h3>OO's Love Hits</h3>
+							<a href="#"
+								>Pritam, Arijit Singh, <br />
+								Shreya Ghoshal</a
+							>
+						</div>
+					</div>
+				</div>
+
+				<div class="card-tren-wrapper">
+					<div class="tren-heading">
+						<div class="left-heading">
+							<a href="#">Shows To try</a>
+						</div>
+
+						<div class="right-heading" id="show">
+							<a href="#">Show All</a>
+						</div>
+					</div>
+
+					<div class="tren-card-cont">
+						<div class="tren-card">
+							<img
+								src="./Card/Fifth_card/card1.jpeg"
+								alt=""
+								height="165px"
+								width="165px" />
+							<h3>True Story Bro! wit...</h3>
+							<a href="#"> Spotify</a>
+						</div>
+
+						<div class="tren-card">
+							<img
+								src="./Card/Fifth_card/card2.jpeg"
+								height="165px"
+								width="165px"
+								alt="" />
+							<h3>The Horror Show b...</h3>
+							<a href="#">TMV Studios</a>
+						</div>
+
+						<div class="tren-card">
+							<img
+								src="./Card/Fifth_card/card3.jpeg"
+								alt=""
+								height="165px"
+								width="165px" />
+							<h3>Chanakya Niti</h3>
+							<a href="#"> Kiran Chavda</a>
+						</div>
+
+						<div class="tren-card">
+							<img
+								src="./Card/Fifth_card/card4.jpeg"
+								alt=""
+								height="165px"
+								width="165px" />
+							<h3>Horror Time - Scar...</h3>
+							<a href="#"> Horror Time </a>
+						</div>
+
+						<div class="tren-card">
+							<img
+								src="./Card/Fifth_card/card5.jpeg"
+								alt=""
+								height="165px"
+								width="165px" />
+							<h3>Decode Dil with Ekta</h3>
+							<a href="#"> Spotify Studios</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="footer-wrapper-top">
+					<div class="footer-left">
+						<div class="footer-left-cont">
+							<h4>Company</h4>
+							<ul>
+								<li><a href="#">About</a></li>
+								<li><a href="#">Jobs</a></li>
+								<li><a href="#">For the Record</a></li>
+							</ul>
+						</div>
+
+						<div class="footer-left-cont">
+							<h4>Communities</h4>
+							<ul>
+								<li><a href="#">For Artists</a></li>
+								<li><a href="#">Developers</a></li>
+								<li><a href="#">Advertising</a></li>
+								<li><a href="#">Investors</a></li>
+								<li><a href="#">Vendors</a></li>
+								<li><a href="#">Spotify for Work</a></li>
+							</ul>
+						</div>
+
+						<div class="footer-left-cont">
+							<h4>Useful links</h4>
+							<ul>
+								<li><a href="#">Support</a></li>
+								<li><a href="#">Free Mobile App</a></li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="footer-right">
+						<div class="icon-insta icon-foot">
+							<i class="fa-brands fa-instagram"></i>
+						</div>
+						<div class="icon-tiwitter icon-foot">
+							<i class="fa-brands fa-twitter"></i>
+						</div>
+						<div class="icon-facebook icon-foot">
+							<i class="fa-brands fa-facebook"></i>
+						</div>
+					</div>
+				</div>
+
+				<div class="line"></div>
+
+				<div class="footer-wrapper-buttom">
+					<div class="foot-buttom-let">
+						<ul>
+							<li>
+								<a href="#">Legal</a>
+							</li>
+
+							<li>
+								<a href="#">Privacy Center</a>
+							</li>
+
+							<li>
+								<a href="#">Privacy Policy</a>
+							</li>
+
+							<li>
+								<a href="#">Cookies</a>
+							</li>
+
+							<li>
+								<a href="#">About Ads</a>
+							</li>
+
+							<li>
+								<a href="#">About Ads</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="foot-buttom-right">
+						<span>&copy; 2023 alam md</span>
+					</div>
+				</div>
+			</div>
+			<!-- Main Content End -->
+
+			<!-- Music Player Start -->
+			<div class="music-player">
+				<div class="music-player-content">
+					<div class="music-player-leftpart">
+						<div class="leftpart-left">
+							<img src="./homeworkimg/album_picture.jpeg" alt="" />
+							<div>
+								<h4 class="left-part" id="hfour">
+									<a href="#">Saat Samundar paar Happy</a>
+								</h4>
+								<p
+									style="font-size: 0.75rem; padding-top: 0.5rem; opacity: 0.5"
+									class="pragraph">
+									<a href="#">Sadhana Sargam</a>
+								</p>
+							</div>
+						</div>
+
+						<div class="leftpart-right">
+							<img
+								src="./homeworkimg/album_icon1.png"
+								class="hw-icon1"
+								alt="" />
+							<img
+								src="./homeworkimg/album_icon2.png"
+								class="hw-icon2"
+								alt="" />
+						</div>
+					</div>
+
+					<div class="music-player-mediumpart">
+						<div class="music-player-medium-toppart">
+							<img
+								src="./asset/player_icon1.png"
+								alt=""
+								class="music-player-icon" />
+							<img
+								src="./asset/player_icon2.png"
+								alt=""
+								class="music-player-icon" />
+							<img
+								src="./asset/player_icon3.png"
+								style="opacity: 1; height: 1.75rem"
+								class="music-player-icon" />
+							<img
+								src="./asset/player_icon4.png"
+								alt=""
+								class="music-player-icon" />
+							<img
+								src="./asset/player_icon5.png"
+								alt=""
+								class="music-player-icon" />
+						</div>
+
+						<div class="music-player-medium-buttompart">
+							<span>00:00</span>
+							<input type="range" min="0" max="100" class="progress-bar" />
+							<span>03:49</span>
+						</div>
+					</div>
+
+					<div class="music-player-rightpart">
+						<img
+							src="./homeworkimg/controls_icon1.png"
+							alt=""
+							class="rightpart-img"
+							height="35px"
+							width="35px" />
+						<img
+							src="./homeworkimg/controld_icon2.png"
+							alt=""
+							class="rightpart-img"
+							height="35px"
+							width="35px" />
+						<img
+							src="./homeworkimg/controls_icon3.png"
+							alt=""
+							class="rightpart-img"
+							height="25px"
+							width="25px" />
+						<img
+							src="./homeworkimg/controls_icon4.png"
+							alt=""
+							class="rightpart-img"
+							height="20px"
+							width="20px" />
+						<img
+							src="./homeworkimg/controls_icon5.png"
+							alt=""
+							class="rightpart-img"
+							height="35px"
+							width="35px" />
+						<input type="range" min="0" max="100" class="volume" />
+					</div>
+				</div>
+			</div>
+			<!-- Music Player End -->
+		</div>
+	</body>
+</html>
